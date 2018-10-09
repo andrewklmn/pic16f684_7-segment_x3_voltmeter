@@ -41,7 +41,7 @@ void main(void) {
     
     while(1){
         // Считываем ADC на втором канале и отображаем сразу
-        draw_to_LED(ADC_Read(2));
+        draw_to_LED(ADC_Read(2)/2.048);
     };
     return;
 };

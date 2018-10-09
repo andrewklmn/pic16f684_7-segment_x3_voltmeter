@@ -128,19 +128,19 @@ void draw_to_LED(int i){
     int d = i/100;
     convert_to_segment(d);
     LED1 = 0;
-    __delay_ms(10);
+    __delay_ms(20);
     LED1 = 1;    
 
     d = i/10 - i/100*10;
     convert_to_segment(d);
     LED2 = 0;
-    __delay_ms(10);
+    __delay_ms(20);
     LED2 = 1;    
 
     d = i - i/10*10;
     convert_to_segment(d);
     LED3 = 0;
-    __delay_ms(10);
+    __delay_ms(20);
     LED3 = 1;    
 };
 
